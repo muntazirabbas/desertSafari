@@ -1,0 +1,1212 @@
+extends layout
+block append head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='js/html5shiv.js')
+      script(src='js/respond.min.js')
+block append content
+    // Preloader
+    #preloader
+      #status  
+    // MOBILE MENU
+    section
+      .ed-mob-menu
+        .ed-mob-menu-con
+          .ed-mm-left
+            .wed-logo
+              a(href='main.html')
+                img(src='images/logo.png', alt='')
+          .ed-mm-right
+            .ed-mm-menu
+              a.ed-micon(href='#!')
+                i.fa.fa-bars
+              .ed-mm-inn
+                a.ed-mi-close(href='#!')
+                  i.fa.fa-times
+                h4 Home pages
+                ul
+                  li
+                    a(href='booking-all.html') Home page 1
+                  li
+                    a(href='booking-all.html') Home page 2
+                  li
+                    a(href='booking-tour-package.html') Home page 3
+                  li
+                    a(href='booking-hotel.html') Home page 4
+                  li
+                    a(href='booking-car-rentals.html') Home page 5
+                  li
+                    a(href='booking-flight.html') Home page 6
+                  li
+                    a(href='booking-slider.html') Home page 7
+                h4 Tour Packages
+                ul
+                  li
+                    a(href='all-package.html') All Package
+                  li
+                    a(href='family-package.html') Family Package
+                  li
+                    a(href='honeymoon-package.html') Honeymoon Package
+                  li
+                    a(href='group-package.html') Group Package
+                  li
+                    a(href='weekend-package.html') WeekEnd Package
+                  li
+                    a(href='regular-package.html') Regular Package
+                  li
+                    a(href='custom-package.html') Custom Package
+                h4 Sighe Seeings Pages
+                ul
+                  li
+                    a(href='places.html') Seight Seeing 1
+                  li
+                    a(href='places-1.html') Seight Seeing 2
+                  li
+                    a(href='places-2.html') Seight Seeing 3
+                h4 User Dashboard
+                ul
+                  li
+                    a(href='dashboard.html') My Bookings
+                  li
+                    a(href='db-my-profile.html') My Profile
+                  li
+                    a(href='db-my-profile-edit.html') My Profile edit
+                  li
+                    a(href='db-travel-booking.html') Tour Packages
+                  li
+                    a(href='db-hotel-booking.html') Hotel Bookings
+                  li
+                    a(href='db-event-booking.html') Event bookings
+                  li
+                    a(href='db-payment.html') Make Payment
+                  li
+                    a(href='db-refund.html') Cancel Bookings
+                  li
+                    a(href='db-all-payment.html') Prient E-Tickets
+                  li
+                    a(href='db-event-details.html') Event booking details
+                  li
+                    a(href='db-hotel-details.html') Hotel booking details
+                  li
+                    a(href='db-travel-details.html') Travel booking details
+                h4 Other pages:1
+                ul
+                  li
+                    a(href='tour-details.html') Travel details
+                  li
+                    a(href='hotel-details.html') Hotel details
+                  li
+                    a(href='all-package.html') All package
+                  li
+                    a(href='hotels-list.html') All hotels
+                  li
+                    a(href='booking.html') Booking page
+                h4.ed-dr-men-mar-top User login pages
+                ul
+                  li
+                    a(href='register.html') Register
+                  li
+                    a(href='login.html') Login and Sign in
+                  li
+                    a(href='forgot-pass.html') Forgot pass
+                h4 Other pages:2
+                ul
+                  li
+                    a(href='about.html') About Us
+                  li
+                    a(href='testimonials.html') Testimonials
+                  li
+                    a(href='events.html') Events
+                  li
+                    a(href='blog.html') Blog
+                  li
+                    a(href='tips.html') Tips Before Travel
+                  li
+                    a(href='price-list.html') Price List
+                  li
+                    a(href='discount.html') Discount
+                  li
+                    a(href='faq.html') FAQ
+                  li
+                    a(href='sitemap.html') Site map
+                  li
+                    a(href='404.html') 404 Page
+                  li
+                    a(href='contact.html') Contact Us
+    // HEADER SECTION
+    section
+      // TOP BAR
+      .ed-top
+        .container
+          .row
+            .col-md-12
+              .ed-com-t1-left
+                ul
+                  li
+                    a(href='#') Contact: Lake Road, Suite 180 Farmington Hills, U.S.A.
+                  li
+                    a(href='#') Phone: +101-1231-1231
+              .ed-com-t1-right
+                ul
+                  li
+                    a(href='login.html') Sign In
+                  li
+                    a(href='register.html') Sign Up
+              .ed-com-t1-social
+                ul
+                  li
+                    a(href='#')
+                      i.fa.fa-facebook(aria-hidden='true')
+                  li
+                    a(href='#')
+                      i.fa.fa-google-plus(aria-hidden='true')
+                  li
+                    a(href='#')
+                      i.fa.fa-twitter(aria-hidden='true')
+      // LOGO AND MENU SECTION
+      .top-logo(data-spy='affix', data-offset-top='250')
+        .container
+          .row
+            .col-md-12
+              .wed-logo
+                a(href='main.html')
+                  img(src='images/logo.png', alt='')
+              .main-menu
+                ul
+                  li
+                    a(href='main.html') Home
+                  li.about-menu
+                    a.mm-arr(href='family-package.html') Packages
+                    // MEGA MENU 1
+                    .mm-pos
+                      .about-mm.m-menu
+                        .m-menu-inn
+                          .mm1-com.mm1-s1
+                            .ed-course-in
+                              a.course-overlay.menu-about(href='all-package.html')
+                                img(src='images/sight/5.jpg', alt='')
+                                span Popular Package
+                          .mm1-com.mm1-s2
+                            p
+                              | Want to change the world? At Berkeley we’re doing just that. When you join the Golden Bear community, you’re part of an institution that shifts the global conversation every single day.
+                            a.mm-r-m-btn(href='all-package.html') Read more
+                          .mm1-com.mm1-s3
+                            ul
+                              li
+                                a(href='booking-all.html') All Booking
+                              li
+                                a(href='booking-tour-package.html') Tour Package Booking
+                              li
+                                a(href='booking-hotel.html') Hotel Booking
+                              li
+                                a(href='booking-car-rentals.html') Car Rentals Booking
+                              li
+                                a(href='booking-flight.html') Flight Booking
+                              li
+                                a(href='booking-slider.html') Slider Booking
+                          .mm1-com.mm1-s4
+                            ul
+                              li
+                                a(href='all-package.html') All Package
+                              li
+                                a(href='family-package.html') Family Package
+                              li
+                                a(href='honeymoon-package.html') Honeymoon Package
+                              li
+                                a(href='group-package.html') Group Package
+                              li
+                                a(href='weekend-package.html') WeekEnd Package
+                              li
+                                a(href='regular-package.html') Regular Package
+                              li
+                                a(href='custom-package.html') Custom Package
+                  li.admi-menu
+                    a.mm-arr(href='#') Seight Seeing
+                    // MEGA MENU 1
+                    .mm-pos
+                      .admi-mm.m-menu
+                        .m-menu-inn
+                          .mm2-com.mm1-com.mm1-s1
+                            .ed-course-in
+                              a.course-overlay(href='places.html')
+                                img(src='images/sight/1.jpg', alt='')
+                                span Seight Seeing - 1
+                            p
+                              | Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.
+                            a.mm-r-m-btn(href='places.html') Read more
+                          .mm2-com.mm1-com.mm1-s1
+                            .ed-course-in
+                              a.course-overlay(href='places-1.html')
+                                img(src='images/sight/2.jpg', alt='')
+                                span Seight Seeing - 2
+                            p
+                              | Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.
+                            a.mm-r-m-btn(href='places-1.html') Read more
+                          .mm2-com.mm1-com.mm1-s1
+                            .ed-course-in
+                              a.course-overlay(href='places-2.html')
+                                img(src='images/sight/3.jpg', alt='')
+                                span Seight Seeing - 3
+                            p
+                              | Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.
+                            a.mm-r-m-btn(href='places-2.html') Read more
+                          .mm2-com.mm1-com.mm1-s4
+                            .ed-course-in
+                              a.course-overlay(href='places-3.html')
+                                img(src='images/sight/4.jpg', alt='')
+                                span Seight Seeing - 4
+                            p
+                              | Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.
+                            a.mm-r-m-btn(href='places-3.html') Read more
+                  li
+                    a(href='hotels-list.html') Hotels
+                  // <li><a class='dropdown-button ed-sub-menu' href='#' data-activates='dropdown1'>Courses</a></li>
+                  li.cour-menu
+                    a.mm-arr(href='#!') All Pages
+                    // MEGA MENU 1
+                    .mm-pos
+                      .cour-mm.m-menu
+                        .m-menu-inn
+                          .mm1-com.mm1-cour-com.mm1-s3
+                            h4 Home pages
+                            ul
+                              li
+                                a(href='booking-all.html') Home page 1
+                              li
+                                a(href='booking-all.html') Home page 2
+                              li
+                                a(href='booking-tour-package.html') Home page 3
+                              li
+                                a(href='booking-hotel.html') Home page 4
+                              li
+                                a(href='booking-car-rentals.html') Home page 5
+                              li
+                                a(href='booking-flight.html') Home page 6
+                              li
+                                a(href='booking-slider.html') Home page 7
+                          .mm1-com.mm1-cour-com.mm1-s3
+                            h4 Tour Packages
+                            ul
+                              li
+                                a(href='all-package.html') All Package
+                              li
+                                a(href='family-package.html') Family Package
+                              li
+                                a(href='honeymoon-package.html') Honeymoon Package
+                              li
+                                a(href='group-package.html') Group Package
+                              li
+                                a(href='weekend-package.html') WeekEnd Package
+                              li
+                                a(href='regular-package.html') Regular Package
+                              li
+                                a(href='custom-package.html') Custom Package
+                            h4.ed-dr-men-mar-top Sighe Seeings Pages
+                            ul
+                              li
+                                a(href='places.html') Seight Seeing 1
+                              li
+                                a(href='places-1.html') Seight Seeing 2
+                              li
+                                a(href='places-2.html') Seight Seeing 3
+                          .mm1-com.mm1-cour-com.mm1-s3
+                            h4 User Dashboard
+                            ul
+                              li
+                                a(href='dashboard.html') My Bookings
+                              li
+                                a(href='db-my-profile.html') My Profile
+                              li
+                                a(href='db-my-profile-edit.html') My Profile edit
+                              li
+                                a(href='db-travel-booking.html') Tour Packages
+                              li
+                                a(href='db-hotel-booking.html') Hotel Bookings
+                              li
+                                a(href='db-event-booking.html') Event bookings
+                              li
+                                a(href='db-payment.html') Make Payment
+                              li
+                                a(href='db-refund.html') Cancel Bookings
+                              li
+                                a(href='db-all-payment.html') Prient E-Tickets
+                              li
+                                a(href='db-event-details.html') Event booking details
+                              li
+                                a(href='db-hotel-details.html') Hotel booking details
+                              li
+                                a(href='db-travel-details.html') Travel booking details
+                          .mm1-com.mm1-cour-com.mm1-s3
+                            h4 Other pages:1
+                            ul
+                              li
+                                a(href='tour-details.html') Travel details
+                              li
+                                a(href='hotel-details.html') Hotel details
+                              li
+                                a(href='all-package.html') All package
+                              li
+                                a(href='hotels-list.html') All hotels
+                              li
+                                a(href='booking.html') Booking page
+                            h4.ed-dr-men-mar-top User login pages
+                            ul
+                              li
+                                a(href='register.html') Register
+                              li
+                                a(href='login.html') Login and Sign in
+                              li
+                                a(href='forgot-pass.html') Forgot pass
+                          .mm1-com.mm1-cour-com.mm1-s4
+                            h4 Other pages:2
+                            ul
+                              li
+                                a(href='about.html') About Us
+                              li
+                                a(href='testimonials.html') Testimonials
+                              li
+                                a(href='events.html') Events
+                              li
+                                a(href='blog.html') Blog
+                              li
+                                a(href='tips.html') Tips Before Travel
+                              li
+                                a(href='price-list.html') Price List
+                              li
+                                a(href='discount.html') Discount
+                              li
+                                a(href='faq.html') FAQ
+                              li
+                                a(href='sitemap.html') Site map
+                              li
+                                a(href='404.html') 404 Page
+                              li
+                                a(href='contact.html') Contact Us
+                  li
+                    a(href='events.html') Events
+                  li
+                    a(href='dashboard.html') Profile
+                  li
+                    a(href='contact.html') Contact us
+      // TOP SEARCH BOX
+      .search-top
+        .container
+          .row
+            .col-md-12
+              .search-form
+                form.tourz-search-form
+                  .input-field
+                    input#select-city.autocomplete(type='text')
+                    label(for='select-city') Enter city
+                  .input-field
+                    input#select-search.autocomplete(type='text')
+                    label.search-hotel-type(for='select-search') Search over a million tour and travels, sight seeings, hotels and more
+                  .input-field
+                    input.waves-effect.waves-light.tourz-sear-btn(type='submit', value='search')
+      // END TOP SEARCH BOX
+      // END HEADER SECTION
+      // HEADER SECTION
+      section
+        div
+          div
+            div
+              .slider.fullscreen
+                ul.slides
+                  li
+                    img(src='images/slider/1.jpg', alt='')
+                    // random image
+                    .caption.center-align.slid-cap
+                      h5.light.grey-text.text-lighten-3 Here's our small slogan.
+                      h2 This is our big Tagline!
+                      p
+                        | Mauris non placerat nulla. Sed vestibulum quam mauris, et malesuada tortor venenatis at.Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, pellentesque id mi.
+                      a.waves-effect.waves-light(href='#') Booking
+                      a(href='#') Booking
+                  li
+                    img(src='images/slider/2.jpg', alt='')
+                    // random image
+                    .caption.center-align.slid-cap
+                      h5.light.grey-text.text-lighten-3 Here's our small slogan.
+                      h2 This is our big Tagline!
+                      p
+                        | Mauris non placerat nulla. Sed vestibulum quam mauris, et malesuada tortor venenatis at.Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, pellentesque id mi.
+                      a.waves-effect.waves-light(href='#') Booking
+                      a(href='#') Booking
+                  li
+                    img(src='images/slider/3.jpg', alt='')
+                    // random image
+                    .caption.center-align.slid-cap
+                      h5.light.grey-text.text-lighten-3 Here's our small slogan.
+                      h2 This is our big Tagline!
+                      p
+                        | Mauris non placerat nulla. Sed vestibulum quam mauris, et malesuada tortor venenatis at.Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, pellentesque id mi.
+                      a.waves-effect.waves-light(href='#') Booking
+                      a(href='#') Booking
+                  li
+                    img(src='images/slider/4.jpg', alt='')
+                    // random image
+                    .caption.center-align.slid-cap
+                      h5.light.grey-text.text-lighten-3 Here's our small slogan.
+                      h2 This is our big Tagline!
+                      p
+                        | Mauris non placerat nulla. Sed vestibulum quam mauris, et malesuada tortor venenatis at.Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, pellentesque id mi.
+                      a.waves-effect.waves-light(href='#') Booking
+                      a(href='#') Booking
+      // END HEADER SECTION
+      section
+        .rows.pad-bot-redu.tb-space.hom2-ban-pack
+          .container
+            div
+              // TOUR PLACE 1
+              .col-md-4.col-sm-6.col-xs-12.b_packages.wow.fadeInUp(data-wow-duration='0.5s')
+                // OFFER BRAND
+                .band
+                  img(src='images/band.png', alt='')
+                // IMAGE
+                .v_place_img
+                  img(src='images/t5.png', alt='Tour Booking', title='Tour Booking')
+                // TOUR TITLE & ICONS
+                .b_pack.rows
+                  // TOUR TITLE
+                  .col-md-8.col-sm-8
+                    h4
+                      a(href='tour-details.html')
+                        | Rio de Janeiro
+                        span.v_pl_name (Brazil)
+                  // TOUR ICONS
+                  .col-md-4.col-sm-4.pack_icon
+                    ul
+                      li
+                        a(href='#')
+                          img(src='images/clock.png', alt='Date', title='Tour Timing')
+                      li
+                        a(href='#')
+                          img(src='images/info.png', alt='Details', title='View more details')
+                      li
+                        a(href='#')
+                          img(src='images/price.png', alt='Price', title='Price')
+                      li
+                        a(href='#')
+                          img(src='images/map.png', alt='Location', title='Location')
+              // TOUR PLACE 2
+              .col-md-4.col-sm-6.col-xs-12.b_packages.wow.fadeInUp(data-wow-duration='1s')
+                // OFFER BRAND
+                .band
+                  img(src='images/band1.png', alt='')
+                // IMAGE
+                .v_place_img
+                  img(src='images/t1.png', alt='Tour Booking', title='Tour Booking')
+                // TOUR TITLE & ICONS
+                .b_pack.rows
+                  // TOUR TITLE
+                  .col-md-8.col-sm-8
+                    h4
+                      a(href='tour-details.html')
+                        | Paris
+                        span.v_pl_name (England)
+                  // TOUR ICONS
+                  .col-md-4.col-sm-4.pack_icon
+                    ul
+                      li
+                        a(href='#')
+                          img(src='images/clock.png', alt='Date', title='Tour Timing')
+                      li
+                        a(href='#')
+                          img(src='images/info.png', alt='Details', title='View more details')
+                      li
+                        a(href='#')
+                          img(src='images/price.png', alt='Price', title='Price')
+                      li
+                        a(href='#')
+                          img(src='images/map.png', alt='Location', title='Location')
+              // TOUR PLACE 3
+              .col-md-4.col-sm-6.col-xs-12.b_packages.wow.fadeInUp(data-wow-duration='1.5s')
+                .v_place_img
+                  img(src='images/t2.png', alt='Tour Booking', title='Tour Booking')
+                .b_pack.rows
+                  .col-md-8.col-sm-8
+                    h4
+                      a(href='tour-details.html')
+                        | South India
+                        span.v_pl_name (India)
+                  .col-md-4.col-sm-4.pack_icon
+                    ul
+                      li
+                        a(href='#')
+                          img(src='images/clock.png', alt='Date', title='Tour Timing')
+                      li
+                        a(href='#')
+                          img(src='images/info.png', alt='Details', title='View more details')
+                      li
+                        a(href='#')
+                          img(src='images/price.png', alt='Price', title='Price')
+                      li
+                        a(href='#')
+                          img(src='images/map.png', alt='Location', title='Location')
+      // ====== REQUEST A QUOTE ==========
+      section
+        .form.tb-space.pad-top-o
+          .rows.container
+            .spe-title
+              h2
+                | Book your 
+                span favourite Package
+                |  Now!
+              .title-line
+                .tl-1
+                .tl-2
+                .tl-3
+              p
+                | World's leading tour and travels Booking website,Over 30,000 packages worldwide. Book travel packages and enjoy your holidays with distinctive experience
+            .col-md-6.col-sm-6.col-xs-12.form_1
+              .succ_mess Thank you for contacting us we will get back to you soon.
+              form.v2-search-form
+                .row
+                  .input-field.col.s12
+                    input#select-city-1.autocomplete(type='text')
+                    label(for='select-city-1') Select City or Place
+                  .input-field.col.s12
+                    select
+                      option(value='', disabled='', selected='') Select your package
+                      option(value='1') Honeymoon Package
+                      option(value='2') Family Package
+                      option(value='3') Holiday Package
+                      option(value='1') Group Package
+                      option(value='1') Regular Package
+                .row
+                  .input-field.col.s6
+                    input#from(type='text', name='from')
+                    label(for='from') Arrival Date
+                  .input-field.col.s6
+                    input#to(type='text', name='to')
+                    label(for='to') Departure Date
+                .row
+                  .input-field.col.s6
+                    select
+                      option(value='', disabled='', selected='') No of adults
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+                      option(value='1') 4
+                      option(value='1') 5
+                      option(value='1') 6
+                  .input-field.col.s6
+                    select
+                      option(value='', disabled='', selected='') No of childrens
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+                      option(value='1') 4
+                      option(value='1') 5
+                      option(value='1') 6
+                .row
+                  .input-field.col.s6
+                    select
+                      option(value='', disabled='', selected='') Min Price
+                      option(value='1') $200
+                      option(value='2') $500
+                      option(value='3') $1000
+                      option(value='1') $5000
+                      option(value='1') $10,000
+                      option(value='1') $50,000
+                  .input-field.col.s6
+                    select
+                      option(value='', disabled='', selected='') Max Price
+                      option(value='1') $200
+                      option(value='2') $500
+                      option(value='3') $1000
+                      option(value='1') $5000
+                      option(value='1') $10,000
+                      option(value='1') $50,000
+                .row
+                  .input-field.col.s12
+                    input.waves-effect.waves-light.tourz-sear-btn.v2-ser-btn(type='submit', value='search')
+            .col-md-6.col-sm-6.col-xs-12.family
+              img(src='images/family.png', alt='')
+      // ====== HOME HOTELS ==========
+      section
+        .rows.tb-space.pad-bot-redu
+          .container
+            // TITLE & DESCRIPTION
+            .spe-title
+              h2
+                | Popular 
+                span Cities
+              .title-line
+                .tl-1
+                .tl-2
+                .tl-3
+              p
+                | World's leading Hotel Booking website,Over 30,000 Hotel rooms worldwide. Book Hotel rooms and enjoy your holidays with distinctive experience
+            // CITY
+            .col-md-6
+              a(href='tour-details.html')
+                .tour-mig-like-com
+                  .tour-mig-lc-img
+                    img(src='images/listing/home.jpg', alt='')
+                  .tour-mig-lc-con
+                    h5 Europe
+                    p
+                      span 12 Packages
+                      |  Starting from $2400
+            .col-md-3
+              a(href='tour-details.html')
+                .tour-mig-like-com
+                  .tour-mig-lc-img
+                    img(src='images/listing/home3.jpg', alt='')
+                  .tour-mig-lc-con.tour-mig-lc-con2
+                    h5 Dubai
+                    p Starting from $2400
+            .col-md-3
+              a(href='tour-details.html')
+                .tour-mig-like-com
+                  .tour-mig-lc-img
+                    img(src='images/listing/home2.jpg', alt='')
+                  .tour-mig-lc-con.tour-mig-lc-con2
+                    h5 India
+                    p Starting from $2400
+            .col-md-3
+              a(href='tour-details.html')
+                .tour-mig-like-com
+                  .tour-mig-lc-img
+                    img(src='images/listing/home1.jpg', alt='')
+                  .tour-mig-lc-con.tour-mig-lc-con2
+                    h5 Usa
+                    p Starting from $2400
+            .col-md-3
+              a(href='tour-details.html')
+                .tour-mig-like-com
+                  .tour-mig-lc-img
+                    img(src='images/listing/home4.jpg', alt='')
+                  .tour-mig-lc-con.tour-mig-lc-con2
+                    h5 London
+                    p Starting from $2400
+      // ====== HOME HOTELS ==========
+      section
+        .rows.tb-space.pad-top-o.pad-bot-redu
+          .container
+            // TITLE & DESCRIPTION
+            .spe-title
+              h2
+                | Hotels 
+                span booking open now! 
+              .title-line
+                .tl-1
+                .tl-2
+                .tl-3
+              p
+                | World's leading Hotel Booking website,Over 30,000 Hotel rooms worldwide. Book Hotel rooms and enjoy your holidays with distinctive experience
+            // HOTEL GRID
+            .to-ho-hotel
+              // HOTEL GRID
+              .col-md-4
+                .to-ho-hotel-con
+                  .to-ho-hotel-con-1
+                    .hot-page2-hli-3
+                      img(src='images/hci1.png', alt='')
+                    .hom-hot-av-tic  Available Tickets: 42 
+                    img(src='images/hotels/1.jpg', alt='')
+                  .to-ho-hotel-con-23
+                    .to-ho-hotel-con-2
+                      a(href='hotel-details.html')
+                        h4 GTC Grand Chola
+                    .to-ho-hotel-con-3
+                      ul
+                        li
+                          | City: illunois,united states
+                          .dir-rat-star.ho-hot-rat-star
+                            | Rating: 
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                        li
+                          span.ho-hot-pri-dis $720
+                          span.ho-hot-pri $420
+              // HOTEL GRID
+              .col-md-4
+                .to-ho-hotel-con
+                  .to-ho-hotel-con-1
+                    .hot-page2-hli-3
+                      img(src='images/hci1.png', alt='')
+                    .hom-hot-av-tic  Available Tickets: 520 
+                    img(src='images/hotels/2.jpg', alt='')
+                  .to-ho-hotel-con-23
+                    .to-ho-hotel-con-2
+                      a(href='hotel-details.html')
+                        h4 Taaj Grand Resorts
+                    .to-ho-hotel-con-3
+                      ul
+                        li
+                          | City: illunois,united states
+                          .dir-rat-star.ho-hot-rat-star
+                            | Rating: 
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                        li
+                          span.ho-hot-pri-dis $840
+                          span.ho-hot-pri $540
+              // HOTEL GRID
+              .col-md-4
+                .to-ho-hotel-con
+                  .to-ho-hotel-con-1
+                    .hot-page2-hli-3
+                      img(src='images/hci1.png', alt='')
+                    .hom-hot-av-tic  Available Tickets: 92 
+                    img(src='images/hotels/3.jpg', alt='')
+                  .to-ho-hotel-con-23
+                    .to-ho-hotel-con-2
+                      a(href='hotel-details.html')
+                        h4 Keep Grand Hotels
+                    .to-ho-hotel-con-3
+                      ul
+                        li
+                          | City: illunois,united states
+                          .dir-rat-star.ho-hot-rat-star
+                            | Rating: 
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star(aria-hidden='true')
+                            i.fa.fa-star-o(aria-hidden='true')
+                        li
+                          span.ho-hot-pri-dis $680
+                          span.ho-hot-pri $380
+      // ====== SECTION: FREE CONSULTANT ==========
+      // ====== REQUEST A QUOTE ==========
+      section
+        .ho-popu.tb-space.pad-bot-redu
+          .rows.container
+            // TITLE & DESCRIPTION
+            .spe-title
+              h2
+                | Top 
+                span Branding
+                |  for this month
+              .title-line
+                .tl-1
+                .tl-2
+                .tl-3
+              p
+                | World's leading tour and travels Booking website,Over 30,000 packages worldwide. Book travel packages and enjoy your holidays with distinctive experience
+            .ho-popu-bod
+              .col-md-4
+                .hot-page2-hom-pre-head
+                  h4
+                    | Top Branding 
+                    span Hotels
+                .hot-page2-hom-pre
+                  ul
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/hotels/1.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Taaj Club House
+                          span City: illunois, United States
+                        .hot-page2-hom-pre-3
+                          span 4.5
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/hotels/2.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Universal luxury Grand Hotel
+                          span City: Rio,Brazil
+                        .hot-page2-hom-pre-3
+                          span 4.2
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/hotels/3.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Barcelona Grand Pales
+                          span City: Chennai,India
+                        .hot-page2-hom-pre-3
+                          span 5.0
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/hotels/4.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Lake Palace view Hotel
+                          span City: Beijing,China
+                        .hot-page2-hom-pre-3
+                          span 2.5
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/hotels/8.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 First Class Grandd Hotel
+                          span City: Berlin,Germany
+                        .hot-page2-hom-pre-3
+                          span 4.0
+              .col-md-4
+                .hot-page2-hom-pre-head
+                  h4
+                    | Top Branding 
+                    span Packages
+                .hot-page2-hom-pre
+                  ul
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/trends/1.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Family Package Luxury
+                          span Duration: 7 Days and 6 Nights
+                        .hot-page2-hom-pre-3
+                          span 4.1
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/trends/2.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Honeymoon Package Luxury
+                          span Duration: 14 Days and 13 Nights
+                        .hot-page2-hom-pre-3
+                          span 4.4
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/trends/3.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Group Package Luxury
+                          span Duration: 28 Days and 29 Nights
+                        .hot-page2-hom-pre-3
+                          span 3.0
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/trends/4.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Regular Package Luxury
+                          span Duration: 12 Days and 11 Nights
+                        .hot-page2-hom-pre-3
+                          span 3.5
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/trends/1.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Custom Package Luxury
+                          span Duration: 10 Days and 10 Nights
+                        .hot-page2-hom-pre-3
+                          span 5.0
+              .col-md-4
+                .hot-page2-hom-pre-head
+                  h4
+                    | Top Branding 
+                    span Reviewers
+                .hot-page2-hom-pre
+                  ul
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/reviewer/1.jpg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Christopher
+                          span No of Reviews: 620, City: illunois
+                        .hot-page2-hom-pre-3
+                          i.fa.fa-hand-o-right(aria-hidden='true')
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/reviewer/2.png', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Matthew
+                          span No of Reviews: 48, City: Rio
+                        .hot-page2-hom-pre-3
+                          i.fa.fa-hand-o-right(aria-hidden='true')
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/reviewer/3.jpeg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Stephanie
+                          span No of Reviews: 560, City: Chennai
+                        .hot-page2-hom-pre-3
+                          i.fa.fa-hand-o-right(aria-hidden='true')
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/reviewer/4.jpeg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Robert
+                          span No of Reviews: 920, City: Beijing
+                        .hot-page2-hom-pre-3
+                          i.fa.fa-hand-o-right(aria-hidden='true')
+                    // LISTINGS
+                    li
+                      a(href='hotels-list.html')
+                        .hot-page2-hom-pre-1
+                          img(src='images/reviewer/5.jpeg', alt='')
+                        .hot-page2-hom-pre-2
+                          h5 Danielle
+                          span No of Reviews: 768, City: Berlin
+                        .hot-page2-hom-pre-3
+                          i.fa.fa-hand-o-right(aria-hidden='true')
+      // ====== REQUEST A QUOTE ==========
+      section
+        .foot-mob-sec.tb-space
+          .rows.container
+            // FAMILY IMAGE(YOU CAN USE ANY PNG IMAGE)
+            .col-md-6.col-sm-6.col-xs-12.family
+              img(src='images/mobile.png', alt='')
+            // REQUEST A QUOTE
+            .col-md-6.col-sm-6.col-xs-12
+              // THANK YOU MESSAGE
+              .foot-mob-app
+                h2 Have you tried our mobile app?
+                p
+                  | World's leading tour and travels Booking website,Over 30,000 packages worldwide. Book travel packages and enjoy your holidays with distinctive experience
+                ul
+                  li
+                    i.fa.fa-check(aria-hidden='true')
+                    |  Easy Hotel Booking
+                  li
+                    i.fa.fa-check(aria-hidden='true')
+                    |  Tour and Travel Packages
+                  li
+                    i.fa.fa-check(aria-hidden='true')
+                    |  Package Reviews and Ratings
+                  li
+                    i.fa.fa-check(aria-hidden='true')
+                    |  Manage your Bookings, Enquiry and Reviews
+                a(href='#')
+                  img(src='images/android.png', alt='')
+                a(href='#')
+                  img(src='images/apple.png', alt='')
+      // ====== TIPS BEFORE TRAVEL ==========
+      section
+        .rows.tips.tips-home.tb-space.home_title
+          .container.tips_1
+            // TIPS BEFORE TRAVEL
+            .col-md-4.col-sm-6.col-xs-12
+              h3 Tips Before Travel
+              .tips_left.tips_left_1
+                h5 Bring copies of your passport
+                p Aliquam pretium id justo eget tristique. Aenean feugiat vestibulum blandit.
+              .tips_left.tips_left_2
+                h5 Register with your embassy
+                p Mauris efficitur, ante sit amet rhoncus malesuada, orci justo sollicitudin.
+              .tips_left.tips_left_3
+                h5 Always have local cash
+                p Donec et placerat ante. Etiam et velit in massa. 
+            // CUSTOMER TESTIMONIALS
+            .col-md-8.col-sm-6.col-xs-12.testi-2
+              // TESTIMONIAL TITLE
+              h3 Customer Testimonials
+              .testi
+                h4 John William
+                p
+                  | Ut sed sem quis magna ultricies lacinia et sed tortor. Ut non tincidunt nisi, non elementum lorem. Aliquam gravida sodales
+                address Illinois, United States of America
+              // ARRANGEMENTS & HELPS
+              h3 Arrangement & Helps
+              .arrange
+                ul
+                  // LOCATION MANAGER
+                  li
+                    a(href='#')
+                      img(src='images/Location-Manager.png', alt='')
+                  // PRIVATE GUIDE
+                  li
+                    a(href='#')
+                      img(src='images/Private-Guide.png', alt='')
+                  // ARRANGEMENTS
+                  li
+                    a(href='#')
+                      img(src='images/Arrangements.png', alt='')
+                  // EVENT ACTIVITIES
+                  li
+                    a(href='#')
+                      img(src='images/Events-Activities.png', alt='')
+      // ====== FOOTER 1 ==========
+      section
+        .rows
+          .footer1.home_title.tb-space
+            .pla1.container
+              // FOOTER OFFER 1
+              .col-md-3.col-sm-6.col-xs-12
+                .disco
+                  h3
+                    | 30%
+                    span OFF
+                  h4 Eiffel Tower,Rome
+                  p valid only for 24th Dec
+                  a(href='booking.html') Book Now
+              // FOOTER OFFER 2
+              .col-md-3.col-sm-6.col-xs-12
+                .disco1.disco
+                  h3
+                    | 42%
+                    span OFF
+                  h4 Colosseum,Burj Al Arab
+                  p valid only for 18th Nov
+                  a(href='booking.html') Book Now
+              // FOOTER MOST POPULAR VACATIONS
+              .col-md-6.col-sm-12.col-xs-12.foot-spec.footer_places
+                h4
+                  span Most Popular
+                  |  Vacations
+                ul
+                  li
+                    a(href='tour-details.html') Angkor Wat
+                  li
+                    a(href='tour-details.html') Buckingham Palace
+                  li
+                    a(href='tour-details.html') High Line
+                  li
+                    a(href='tour-details.html') Sagrada Família
+                  li
+                    a(href='tour-details.html') Statue of Liberty 
+                  li
+                    a(href='tour-details.html') Notre Dame de Paris
+                  li
+                    a(href='tour-details.html') Taj Mahal
+                  li
+                    a(href='tour-details.html') The Louvre
+                  li
+                    a(href='tour-details.html') Tate Modern, London
+                  li
+                    a(href='tour-details.html') Gothic Quarter
+                  li
+                    a(href='tour-details.html') Table Mountain
+                  li
+                    a(href='tour-details.html') Bayon
+                  li
+                    a(href='tour-details.html') Great Wall of China
+                  li
+                    a(href='tour-details.html') Hermitage Museum
+                  li
+                    a(href='tour-details.html') Yellowstone
+                  li
+                    a(href='tour-details.html') Musée d'Orsay
+      // ====== FOOTER 2 ==========
+      section
+        .rows
+          .footer
+            .container
+              .foot-sec2
+                div
+                  .row
+                    .col-sm-3.foot-spec.foot-com
+                      h4
+                        span Holiday
+                        |  Tour & Travels
+                      p World's leading tour and travels Booking website,Over 30,000 packages worldwide.
+                    .col-sm-3.foot-spec.foot-com
+                      h4
+                        span Address
+                        |  & Contact Info
+                      p
+                        | 28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport
+                      p
+                        span.strong Phone: 
+                        span.highlighted +101-1231-1231
+                    .col-sm-3.col-md-3.foot-spec.foot-com
+                      h4
+                        span SUPPORT
+                        |  & HELP
+                      ul.two-columns
+                        li
+                          a(href='#') About Us
+                        li
+                          a(href='#') FAQ
+                        li
+                          a(href='#') Feedbacks
+                        li
+                          a(href='#') Blog 
+                        li
+                          a(href='#') Use Cases
+                        li
+                          a(href='#') Advertise us
+                        li
+                          a(href='#') Discount
+                        li
+                          a(href='#') Vacations
+                        li
+                          a(href='#') Branding Offers 
+                        li
+                          a(href='#') Contact Us
+                    .col-sm-3.foot-social.foot-spec.foot-com
+                      h4
+                        span Follow
+                        |  with us
+                      p
+                        | Join the thousands of other There are many variations of passages of Lorem Ipsum available
+                      ul
+                        li
+                          a(href='#')
+                            i.fa.fa-facebook(aria-hidden='true')
+                        li
+                          a(href='#')
+                            i.fa.fa-google-plus(aria-hidden='true')
+                        li
+                          a(href='#')
+                            i.fa.fa-twitter(aria-hidden='true')
+                        li
+                          a(href='#')
+                            i.fa.fa-linkedin(aria-hidden='true')
+                        li
+                          a(href='#')
+                            i.fa.fa-youtube(aria-hidden='true')
+      // ====== FOOTER - COPYRIGHT ==========
+      section
+        .rows.copy
+          .container
+            p Copyrights © 2017 Company Name. All Rights Reserved
+      section
+        .icon-float
+          ul
+            li
+              a.sh(href='#')
+                | 1k 
+                br
+                |  Share
+            li
+              a.fb1(href='#')
+                i.fa.fa-facebook(aria-hidden='true')
+            li
+              a.gp1(href='#')
+                i.fa.fa-google-plus(aria-hidden='true')
+            li
+              a.tw1(href='#')
+                i.fa.fa-twitter(aria-hidden='true')
+            li
+              a.li1(href='#')
+                i.fa.fa-linkedin(aria-hidden='true')
+            li
+              a.wa1(href='#')
+                i.fa.fa-whatsapp(aria-hidden='true')
+            li
+              a.sh1(href='#')
+                i.fa.fa-envelope-o(aria-hidden='true')
+      // ========= Scripts ===========
+      script(src='javascripts/jquery-latest.min.js')
+      script(src='javascripts/jquery-ui.js')
+      script(src='javascripts/bootstrap.js')
+      script(src='javascripts/wow.min.js')
+      script(src='javascripts/materialize.min.js')
+      script(src='javascripts/custom.js')
