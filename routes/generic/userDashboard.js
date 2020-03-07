@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('userDashboard', { title: 'Desert Safari' });
+    res.render('generic/userDashboard', { title: 'Desert Safari' });
 });
 
 module.exports = router;

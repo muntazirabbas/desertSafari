@@ -15,11 +15,12 @@ var aboutRouter = require('./routes/generic/about');
 var contactRouter = require('./routes/generic/contact');
 var siteMapRouter = require('./routes/generic/siteMap');
 
-// var userLoginRouter = require('./routes/generic/userLogin');
-// var userProfileRouter = require('./routes/generic/userProfile');
-// var userDashboardRouter = require('./routes/generic/userDashboard');
-// var travelBookingRouter = require('./routes/generic/travelBooking');
-// var travelDetailRouter = require('./routes/generic/travelDetail');
+var userLoginRouter = require('./routes/generic/userLogin');
+var userProfileRouter = require('./routes/generic/userProfile');
+var userDashboardRouter = require('./routes/generic/userDashboard');
+var travelBookingRouter = require('./routes/generic/travelBooking');
+var travelDetailRouter = require('./routes/generic/travelDetail');
+
 
 //adminRouting
 var addBlogRouter = require('./routes/admin/addBlog');
@@ -43,8 +44,13 @@ var app = express();
 
 // view engine setup
 app.engine('mustache', mustacheExprees());
-app.set('views', path.join(__dirname, 'views/generic'));
-app.set('views', path.join(__dirname, 'views/admin'));
+// app.set('views', path.join(__dirname, '/views/admin'))
+// app.set('views', path.join(__dirname, '/views/generic'));
+// app.set('views', [__dirname + '/views/admin', __dirname + '/views/generic']);
+app.set('views', __dirname + '/views');
+
+
+// app.set('views', );
 app.set('view engine', 'mustache');
 
 app.use(logger('dev'));
@@ -53,7 +59,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// app.use('/', indexRouter);
 app.use('/', indexRouter);
+
 app.use('/allPackages', packageRouter);
 app.use('/tours', toursRouter);
 app.use('/tourDetail', toursDetailRouter);
@@ -61,17 +69,18 @@ app.use('/blog', blogRouter);
 app.use('/blogDetail', blogDetailRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
-app.use('/sitemap', siteMapRouter);
+app.use('/siteMap', siteMapRouter);
 
-// app.use('/userLogin', contactRouter);
-// app.use('/userProfile', userProfileRouter);
-// app.use('/userDashboard', userDashboardRouter);
-// app.use('/travelBooking', travelBookingRouter);
-// app.use('/travelDetail', travelDetailRouter);
+app.use('/login', userLoginRouter);
+app.use('/profile', userProfileRouter);
+app.use('/dashboard', userDashboardRouter);
+app.use('/travelBooking', travelBookingRouter);
+app.use('/travelDetail', travelDetailRouter);
 
 
 //admin routes
 
+app.use('/admin', dashboardRouter);
 app.use('/admin/addBlog', addBlogRouter);
 app.use('/admin/addPackage', addPackageRouter);
 app.use('/admin/addPackageCategory', addPackageCategoryRouter);

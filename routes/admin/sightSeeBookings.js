@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('sightSeeBookings', { title: 'Desert Safari' });
+    res.render('admin/sightSeeBookings', { title: 'Desert Safari' });
 });
 
 module.exports = router;

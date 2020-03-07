@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('addPackageCategories', { title: 'Desert Safari' });
+    res.render('admin/addPackageCategories', { title: 'Desert Safari' });
 });
 
 module.exports = router;
