@@ -66,7 +66,7 @@ app.use('/all-package', packageRouter);
 app.use('/tours', toursRouter);
 app.use('/tour-details', toursDetailRouter);
 app.use('/blog', blogRouter);
-app.use('/blog-details', blogDetailRouter);
+app.use('/blog-inner', blogDetailRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/siteMap', siteMapRouter);
@@ -111,8 +111,8 @@ app.use(function (err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
-  // res.render('404page');
+  // res.render('error');
+  res.render('generic/index');
 });
 app.listen(3000, () => {
   console.log("listening on port 3000");
