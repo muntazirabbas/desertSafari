@@ -2,6 +2,8 @@ const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 const logger = require('morgan');
 const mustacheExprees = require('mustache-express');
 
@@ -16,9 +18,6 @@ const aboutRouter = require('./routes/generic/about');
 const contactRouter = require('./routes/generic/contact');
 const siteMapRouter = require('./routes/generic/siteMap');
 
-const userLoginRouter = require('./routes/generic/userLogin');
-const userProfileRouter = require('./routes/generic/userProfile');
-const userDashboardRouter = require('./routes/generic/userDashboard');
 const travelBookingRouter = require('./routes/generic/travelBooking');
 const travelDetailRouter = require('./routes/generic/travelDetail');
 
@@ -56,6 +55,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// using bodyParser to parse JSON bodies into JS objects
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// enabling CORS for all requests
+app.use(cors());
 
 
 // setting routes
@@ -70,9 +75,6 @@ app.use('/blog-inner', blogDetailRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/siteMap', siteMapRouter);
-app.use('/login', userLoginRouter);
-app.use('/profile', userProfileRouter);
-app.use('/dashboard', userDashboardRouter);
 app.use('/travelBooking', travelBookingRouter);
 app.use('/travelDetail', travelDetailRouter);
 
@@ -96,6 +98,12 @@ app.use('/admin/package-booking-all', allPackageBookingsRouter);
 app.use('/admin/sight-see-add', sightSeeBookingsRouter);
 app.use('/admin/sight-see-all', sightSeeingRouter);
 
+
+
+
+function login() {
+  alert('loggin user');
+}
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));

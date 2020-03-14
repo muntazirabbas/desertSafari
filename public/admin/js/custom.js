@@ -1,14 +1,14 @@
-$(document).ready(function() {
+$(document).ready(function () {
     "use strict";
 
     //LEFT MOBILE MENU OPEN
-    $(".atab-menu").on('click', function() {
+    $(".atab-menu").on('click', function () {
         $(".sb2-1").css("left", "0");
         $(".btn-close-menu").css("display", "inline-block");
     });
 
     //LEFT MOBILE MENU CLOSE
-    $(".btn-close-menu").on('click', function() {
+    $(".btn-close-menu").on('click', function () {
         $(".sb2-1").css("left", "-350px");
         $(".btn-close-menu").css("display", "none");
     });
@@ -49,5 +49,4 @@ $(document).ready(function() {
             minLength: 1
         }
     });
-
 });
